@@ -92,39 +92,6 @@
     I’ve personally scoped, estimated, and closed over $30 million in approved property insurance claims — including complex multi-building losses, commercial large losses, tree impacts, and litigation-prepped files. From field inspections to full-cycle file management, my work reflects elite-level trust and carrier alignment. This site serves one purpose: proof of experience. If you're looking for a reliable adjuster who delivers results with zero handholding I’m already field-ready. - Zac
   </section>
 
-<script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const phone = form.querySelector('input').value;
-    const message = form.querySelector('textarea').value;
-
-    const res = await fetch("https://sega-path-production.up.railway.app/send-text", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ phone, message }),
-    });
-
-    if (res.ok) {
-      alert("Got it. I’ll text you back.");
-      form.reset();
-    } else {
-      alert("Something went wrong.");
-    }
-  });
-</script>
-
-  <section class="textme">
-    Ready to talk? Send me a text — I’ll text you back.
-    <form action="#">
-      <input type="tel" placeholder="Phone Number" required style="margin-top:14px;">
-      <br>
-      <textarea placeholder="What's on your mind?" rows="2" style="width: 15%; margin-top:4px;"></textarea>
-      <br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
   <section class="grid">
     <div class="case-card">
       <img src="https://cdn.prod.website-files.com/67cf476a76f29e21f23a60cd/68534705609c30d9452b7f3f_4.png" alt="">
